@@ -1,0 +1,68 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  // background-color: blue;
+}
+
+.wrapper {
+  display: inline-block;
+  // background-color: pink;
+  // text-align: center;
+}
+
+nav.navbar {
+  display: inline-block;
+  width: 100%;
+  // background-color: pink;
+  text-align: center;
+}
+
+.navbar a {
+  // margin: 5px;
+
+
+
+}
+// .form-group {
+//   display: inline-block;
+// }
+
+h1 {
+ text-align: center;
+}
+
+
+.post-form {
+ width: 80%;
+ margin: 30px;
+}
+
+.news-feed {
+ display: inline-block;
+ text-align: center;
+ // background-color: blue;
+ // border: 5px solid black;
+}
+
+.posts-wrapper {
+  // background-color: blue;
+}
+
+.posts {
+  display: inline-block;
+  width: 80%;
+ font-size: 2em;
+ // border: 1px solid lightgrey;
+ margin: 10px;
+}
+
+.comments {
+ font-size: 1em;
+ text-align: center;
+}

@@ -1,0 +1,28 @@
+<h1>Chat index</h1>
+
+<ul>
+  <% if @existing_chats_users %>
+    <% @existing_chats_users.each do |other_user| %>
+      <% if other_user != current_user %>
+        <li>
+          <%= link_to(chat_path(current_user, :other_user => other_user.id), method: :post) do %>
+          <%= other_user.user_name %>
+        <% end %>
+      </li>
+    <% end %>
+  <% end %>
+<% end %>
+</ul>
+All Users:
+<ul>
+<% User.all.each do |other_user| %>
+  <% if other_user != current_user %>
+    <li>
+      <%= link_to(chat_path(current_user, :other_user => other_user.id)) do %>
+      <%= other_user.user_name %>
+
+    <% end %>
+  </li>
+<% end %>
+<% end %>
+</ul>

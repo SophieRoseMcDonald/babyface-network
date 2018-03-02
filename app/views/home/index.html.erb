@@ -1,27 +1,32 @@
-<h1>Home#index</h1>
-<%= form_for @new_post do |f| %>
+<div class="post-form">
+  <%= form_for @new_post do |f| %>
   <div class="form-group">
     <%= f.label 'Update status' %><br>
-      <%= f.text_area :content, class: 'form-control', autofocus: true,
-          placeholder: 'How are you?' %>
-      <%= f.file_field :attachment, class: 'form-control' %>
+    <%= f.text_area :content, class: 'form-control', autofocus: true, placeholder: 'How are you?' %>
+    <%= f.file_field :attachment, class: 'form-control' %>
   </div>
   <%= f.submit :post, class: 'btn btn-primary'%>
 <% end %>
+</div>
 
-<% @posts.each do |post| %>
-  <div class="">
-    <p>
-      <%= post.id %>
-      <img src="<%= post.attachment %>" />
-      <%= post.content %>
-    </p>
-    <% post.comments.each do |comment| %>
-      <div class="">
-        <%= comment.user_id %>
-        <%= comment.bdy %>
-        <%= comment.post_id %>
+<div class="news-feed">
+  <div class="post-wrapper">
+    <% @posts.each do |post| %>
+      <div class="posts">
+        <%#= post.id %>
+        <p>
+        <img src="<%= post.attachment %>"/>
+        </p>
+        <%= post.content %>
       </div>
+      <% post.comments.each do |comment| %>
+        <div class="comments">
+          <%#= comment.user_id %>
+          <%= comment.bdy %>
+          <%#= comment.post_id %>
+        </div>
+        <% end %>
     <% end %>
   </div>
-<% end %>
+
+</div>

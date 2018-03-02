@@ -11,7 +11,8 @@ gem 'rails', '~> 5.1.5'
 gem 'devise'
 gem 'gravtastic'
 gem 'carrierwave', '~> 1.0'
-gem 'mailboxer'
+gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
