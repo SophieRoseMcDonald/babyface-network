@@ -1,8 +1,8 @@
-#BabyFace
+# BabyFace
 
 The original Idea of babyface was to create a platform where parents could connect with other local parents in the area and organise playdates.
 
-###challenges
+### challenges
 The biggest challenged I faced during this project was creating a live messaging function using Action Cable. I really wanted to challenge myself and try something new I hadn't done before.
 As soon as I introduced more then one person to the application it crashed.
 
