@@ -1,24 +1,12 @@
-# README
+#BabyFace
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The original Idea of babyface was to create a platform where parents could connect with other local parents in the area and organise playdates.
 
-Things you may want to cover:
+###challenges
+The biggest challenged I faced during this project was creating a live messaging function using Action Cable. I really wanted to challenge myself and try something new I hadn't done before.
+As soon as I introduced more then one person to the application it crashed.
 
-* Ruby version
+I will come back to this project at a later date and try to get it up a running properly.
+In hind sight, I probably should have created a smaller project and maybe building the live messaging on it's own.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In future I would probably use Elixir for the messaging function.
